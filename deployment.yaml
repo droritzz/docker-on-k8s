@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpinex-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alpinex
+  template:
+    metadata:
+      labels:
+        app: alpinex
+    spec:
+      containers:
+      - name: alpinex-container
+        image: droritzz/alpinex:1.9
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: alpinex
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
