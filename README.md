@@ -1,4 +1,4 @@
-# This project contains an excersie for Docker and K8s.
+# This project contains an exercise for Docker and K8s.
 
 ### Tasks:
 - create a Dockerfile that sets up an nginx server based on Alpine Linux and includes an index.html in JS that tells the date - WORKS
