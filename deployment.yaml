@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: alpinex-container
-        image: droritzz/alpinex:1.9
+        image: droritzz/alpinex:1.10
         ports:
         - containerPort: 8080

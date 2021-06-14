@@ -1,7 +1,7 @@
 # This project contains an exercise for Docker and K8s.
 
 ### Tasks:
-- create a Dockerfile that sets up an nginx server based on Alpine Linux and includes an index.html in JS that tells the date - WORKS
+- create a Dockerfile that sets up an nginx server based on Alpine Linux, includes an index.html in JS that tells the date and runs as a non-root user - WORKS
 - build an image and push it to Docker Hub - WORKS
 - deployment code to deploy the image to K8s - WORKS 
 - create a script to test that the container works - STILL IN PROGRESS
@@ -10,6 +10,7 @@
 - Python 3.6 ++
 - Docker 
     - full information on how to install docker depending on your distribution is in the [docker documentation](https://docs.docker.com/engine/install/)
+    - how to run nginx image with [non-root privileges](https://harsimran-kaur.medium.com/run-nginx-as-unprivileged-user-in-docker-container-on-kubernetes-6e71564cf78b). PAY ATTENTION TO PORTS!!
 - Minikube
     - installation instruction for [minikube and kubectl](https://kubernetes.io/docs/tutorials/hello-minikube/)
     - this will automaticaly configure kubectl
