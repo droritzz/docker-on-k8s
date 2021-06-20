@@ -9,7 +9,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8090
+      targetPort: 8080
 ---      
 apiVersion: apps/v1
 kind: Deployment
@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: alpinex-container
-        image: droritzz/alpinex:1.13
+        image: droritzz/alpinex:1.14
         ports:
-        - containerPort: 8090
+        - containerPort: 8080

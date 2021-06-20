@@ -5,4 +5,4 @@ FROM nginxinc/nginx-unprivileged:alpine
 COPY index.html /usr/share/nginx/html
 
 #expose ports listening to the server. unprivileged image uses port 8080 instead of 80 for nginx
-EXPOSE 8090:8080
+EXPOSE 8080
